@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whiteboard</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <header class="toolbar">
+      <h1>Whiteboard</h1>
+      <div class="tools">
+        <label>Цвет <input id="color" type="color" value="#202938" /></label>
+        <label>Толщина <input id="width" type="range" min="1" max="30" value="4" /></label>
+        <button id="clear" type="button">Очистить доску</button>
+      </div>
+    </header>
+    <main class="workspace">
+      <div class="board-frame"><canvas id="board" width="1600" height="1000" aria-label="Whiteboard"></canvas></div>
+    </main>
+  </body>
+</html>
