@@ -11,6 +11,14 @@
     <header class="toolbar">
       <h1>Whiteboard</h1>
       <div class="tools">
+        <label>Инструмент
+          <select id="tool">
+            <option value="pen">Карандаш</option>
+            <option value="line">Линия</option>
+            <option value="rectangle">Прямоугольник</option>
+            <option value="circle">Круг</option>
+          </select>
+        </label>
         <label>Цвет <input id="color" type="color" value="#202938" /></label>
         <label>Толщина <input id="width" type="range" min="1" max="30" value="4" /></label>
         <button id="clear" type="button">Очистить доску</button>
